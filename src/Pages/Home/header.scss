@@ -1,0 +1,36 @@
+.cabecera{
+
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       padding-top: 20%;
+       padding-bottom: 20%;
+       text-align: center;
+       background-image: url("../../public/imagenes/fondo.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;       
+
+       .titulos{
+              margin-left: 39%;
+              text-align: left;
+              
+              h1{
+                     font-size: 250%;
+              }
+
+              h3{
+                     font-size: 200%;
+              }
+       }
+
+       .btn-principal{
+              margin-left: 5%;
+              
+              input{
+                     width: 10%;
+                     height: 3rem;
+              }
+              
+       }
+}

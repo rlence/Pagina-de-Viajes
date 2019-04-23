@@ -1,14 +1,21 @@
 import React, {Component} from 'react';
 
-import Nav from './nav.jsx';
+import Nav from '../Layout/nav.jsx';
+import Header from './header.jsx';
 
 class Home extends Component{
 
        render(){
               return(
-                     <Nav />
+                     <div>
+                            <Nav />       
+                            <Header />
+                     </div>
+                            
+                     
+
               )
        }
 };
 
-export default Home
+export default Home;
