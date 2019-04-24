@@ -11,7 +11,7 @@ function Header(props) {
                             <h3>Descubre lugares maravillosos</h3>
                      </div>
                      <div className="btn-principal">
-                            <input type="button" value="Ver Destinos"></input>
+                            <button type="button"> Ver Destinos </button>
                      </div>
 
               </header>

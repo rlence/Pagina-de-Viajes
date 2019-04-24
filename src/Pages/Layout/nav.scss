@@ -6,6 +6,8 @@
        box-sizing: border-box;
        position: fixed;
        top: 0%;
+       overflow-x: auto;
+
 
        .logo{
               width: 30%;
@@ -24,7 +26,8 @@
                      padding-right: 4%;
                      text-decoration: none;
                      color:white;
-                     font-family: Helvetica;
+                     font-family: arial;
+                     font-size: 1.3em;
               }
 
               a:hover{
@@ -41,3 +44,5 @@
               }
        }
 }
+
+

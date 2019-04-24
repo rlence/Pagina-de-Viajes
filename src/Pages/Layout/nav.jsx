@@ -1,8 +1,21 @@
 import React from 'react';
+
+import IconsNav from './iconNav.jsx';
 import './nav.scss'
 function Nav (props){
+       //aqui va el codigo del evento
+       // window.onscroll = function() {myFunction()};
+
+       // function myFunction() {
+       //        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+       //               document.getElementsByClassName("myP").className = "test";
+       //        } else {
+       //               document.getElementById("myP").className = "";
+       //        }
+       // }
+
        return(
-              <nav className="navegacion">
+              <nav className="navegacion ">
                      <div className="logo">
                             <img src="./imagenes/logo.png"></img>
                      </div>
@@ -12,12 +25,7 @@ function Nav (props){
                             <a href=""> Donde Estamos </a>
                      </div>
                      <div className="iconsNav">
-                            <a href=""> twiiter </a>
-                            <a href=""> facebook </a>
-                            <a href=""> instagram </a>
-                            <a href=""> whatssap </a>
-                            <a href=""> linkedin </a>
-                            <a href=""> youtube </a>
+                            <IconsNav />
                      </div>
               </nav>
        )

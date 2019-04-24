@@ -6,31 +6,39 @@
        padding-top: 20%;
        padding-bottom: 20%;
        text-align: center;
-       background-image: url("../../public/imagenes/fondo.jpg");
+       background-image: url("/imagenes/fondo.jpg");
        background-size: cover;
        background-repeat: no-repeat;
        background-position: center;       
 
        .titulos{
-              margin-left: 39%;
+              margin: auto;
               text-align: left;
+              color: white;
+              margin-bottom: 2%;
               
               h1{
-                     font-size: 250%;
+                     font-size: 300%;
+                     padding: 0%;
+                     margin: 0%;
               }
 
               h3{
-                     font-size: 200%;
+                     font-size: 300%;
+                     padding: 0%;
+                     margin: 0%;
               }
        }
 
        .btn-principal{
-              margin-left: 5%;
+              margin: auto;
+              background-color: yellow;
+              border-color: yellow;
               
-              input{
-                     width: 10%;
+              button{
+                     width: 130%;
                      height: 3rem;
-              }
-              
+                     background-color: rgb(224, 224, 20);
+              } 
        }
 }
