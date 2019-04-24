@@ -1,0 +1,59 @@
+.fondo{
+
+       width: 100%;
+       background-image: url('/imagenes/fondoRegistro.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       padding: 10% 0 10% 0;
+       
+
+       .content{
+              margin: auto;
+              width: 60%;
+             text-align: center;
+             display: flex;
+             flex-direction: column;
+             background-color:rgba(209, 205, 205, 0.733);
+       
+             .title{
+                     text-align: center;
+                     width: 50%;
+                     margin: auto;
+                     margin-bottom: 3%;
+
+                     h1{
+                            font-size: 3em;
+                            margin: 5% 0 3% 0;
+                     }
+
+                     a{
+                            text-decoration: none !important;
+                            color: white;
+                            font-size: 1.3em;
+                     }
+             }
+       
+             .formulario{
+                    width: 30%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 5%;
+                    
+                    input{
+                           height: 2.2em;
+                    }
+
+                    div{
+                     margin: 5% 0 5% 0;
+
+                           input{              
+                                  width: 1em; 
+                                  height: 1em;
+                           }
+                    }
+             }
+              
+       }
+}
