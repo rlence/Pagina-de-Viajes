@@ -52,7 +52,7 @@ function registerFrom() {
                                           value={repetPassword}
                                    />
                                    <div>
-                                          <input type="checkbox"></input>
+                                          <input type="checkbox" required></input>
                                           <label>Acepto los terminos y condiciones, asi como la politica de privacidad</label>
                                    </div>
 

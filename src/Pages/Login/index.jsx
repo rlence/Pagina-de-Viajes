@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 
 import Nav from '../Layout/nav.jsx';
+import LoginFrom from './loginFrom.jsx';
+import Footer from '../Layout/footer.jsx';
 
 class Login extends Component {
 
@@ -8,6 +10,8 @@ class Login extends Component {
               return(
                      <div>
                             <Nav />
+                            <LoginFrom />
+                            <Footer />
                      </div>
               )
        }
