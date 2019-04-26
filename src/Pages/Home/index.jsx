@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 
-import Nav from '../Layout/nav.jsx';
+
 import Header from './header.jsx';
-import Footer from '../Layout/footer.jsx';
+import QuieneSomos from './quienesSomos.jsx'
+
 
 class Home extends Component{
 
@@ -10,10 +11,8 @@ class Home extends Component{
               return(
                      <div>
                             <Header /> 
+                            <QuieneSomos />
                      </div>
-                            
-                     
-
               )
        }
 };

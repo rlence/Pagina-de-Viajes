@@ -32,13 +32,14 @@
 
        .btn-principal{
               margin: auto;
-              background-color: yellow;
-              border-color: yellow;
               
               button{
                      width: 130%;
-                     height: 3rem;
-                     background-color: rgb(224, 224, 20);
+                     height: 3.5rem;
+                     background-color: yellow;
+                     border-color: yellow;
+                     color: black;
+                     font-size: 1.3em;
               } 
        }
 }

@@ -12,9 +12,7 @@ function IconNav(props) {
                      <a href=""><i className= "icons fab fa-linkedin"></i></a>
                      <a href=""><i className= "icons fab fa-youtube"></i></a>
               </div>
-
        )
-
 };
 
 export default IconNav;
