@@ -9,11 +9,9 @@ class Register extends Component {
 
        render(){
               return(
-                     <div>
-                            <Nav />
-                            <RegisterFrom />
-                            <Footer />
-                     </div>
+                    
+                     <RegisterFrom />
+                    
               )
        }
 

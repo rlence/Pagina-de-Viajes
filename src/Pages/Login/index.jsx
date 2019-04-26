@@ -8,11 +8,10 @@ class Login extends Component {
 
        render(){
               return(
-                     <div>
-                            <Nav />
-                            <LoginFrom />
-                            <Footer />
-                     </div>
+                 
+                     <LoginFrom />
+                           
+                     
               )
        }
 
