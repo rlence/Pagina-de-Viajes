@@ -1,0 +1,68 @@
+.dondeEstamos{ 
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       background-color: white;
+
+       .mapa{
+              width: 50%;
+              padding: 3% 1% 3% 1%;
+              text-align: center;
+
+              .imagenMapa{
+                     width:  50%;
+              }
+       }
+
+       .contacto{
+              width: 25%;
+              display: flex;
+              flex-direction: column;
+              padding: 3% 0 3% 0;
+
+              .infoForm{
+
+                     display: flex;
+                     flex-direction: row;
+
+                     .formulario{
+                            
+                            width: 100%;
+
+                            input{
+                                   width: 40%;
+                                   margin: 3% 3% 0 0;
+                            }
+
+                            textarea{
+                                   margin: 5% 3% 0 0;
+                                   width: 90%;
+                            }
+
+                            .requisito{
+                                   margin: 0 0 0 3%;
+                                   padding: 0;
+                                   text-align: left;
+                                   font-size: 0.7em;
+                            }
+
+                            .btn-contact{
+                                   
+                                   width: 100%;
+                                   text-decoration: none;
+                                   
+                                   input{
+                                          margin-top: 5%;
+                                          padding: 1% 3% 1% 3%;
+                                          height: 3em;
+                                          background-color: yellow;
+                                          border-color: yellow;
+                                          color: black;
+                                          font-size: 1.3em;
+                                          font-style: italic;
+                                   }
+                            }
+                     }
+              }
+       }
+}

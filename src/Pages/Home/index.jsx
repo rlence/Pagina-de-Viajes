@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 
 import Header from './header.jsx';
 import QuieneSomos from './quienesSomos.jsx'
+import DondeEstamos from './dondeEstamos.jsx';
 
 
 class Home extends Component{
@@ -12,6 +13,7 @@ class Home extends Component{
                      <div>
                             <Header /> 
                             <QuieneSomos />
+                            <DondeEstamos />
                      </div>
               )
        }
