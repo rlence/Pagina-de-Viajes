@@ -12,7 +12,7 @@ function DondeEstamos () {
 
        return (
 
-              <div className = "dondeEstamos">
+              <div className = "dondeEstamos" id="dondeEstamos"> 
                      <div className= "mapa">
                             <img src="./imagenes/mapa.png" className= "imagenMapa" />
                      </div>

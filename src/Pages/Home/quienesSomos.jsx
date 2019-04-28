@@ -5,7 +5,7 @@ import './quienesSomos.scss';
 function QuienesSomos() {
 
        return (
-              <div className="fondoContenedor" >
+              <div className="fondoContenedor" id="quienesSomos" >
                      <div className="contenedor" >
                             <div className= "quienesSomos" >
                                    <h2>Quienes Somos</h2>

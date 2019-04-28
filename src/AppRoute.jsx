@@ -7,7 +7,7 @@ import Login from './Pages/Login/index';
 
 import Nav from './Pages/Layout/nav.jsx';
 import Footer from './Pages/Layout/footer.jsx';
-
+import Error404 from './Pages/Erro404';
 
 function Layout(props) {
        return (
@@ -30,6 +30,7 @@ function AppRouter() {
                                    <Route path="/" component={Home} exact />
                                    <Route path="/register" component={Register} exact />
                                    <Route path="/login" component={Login} exact />
+                                   <Route path="*" component={ Error404 } />
                             </Switch>
                      </Layout>
               </BrowserRouter>
