@@ -1,17 +1,33 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useName, usePassword, userRepetPassword } from '../../Hooks/Register';
 import './registerFrom.scss';
+import axios from 'axios';
 
 function registerFrom() {
 
-       const [name, setName] = useName('');
+       const [username, setName] = useName('');
+       const [email, setEmail] = useState('');
        const [password, setPassword] = usePassword('');
        const [repetPassword, setRepetPassword] = userRepetPassword('');
 
        function onSubmit(ev) 
        {
               ev.preventDefault();
+
+              const body = {
+                     username,
+                     email,
+                     password
+              }
+
+              axios.post('http://localhost:8080/users/register', body)
+              .then( res => {
+                     console.log(res.headers)
+                     alert('registro exitoso')
+              })
+              .catch( console.error )
+              alert('se produjo un error front-end')
        }
 
        function comparacion() {
@@ -36,20 +52,23 @@ function registerFrom() {
                                    <h1> Registro </h1>
                                    <Link to="/login"><a> ¿Ya estas registrado?  </a></Link>
                             </div>
-                            <form className="formulario" onSubmit= {onSubmit} >
+                            <form className="formulario" onSubmit= { onSubmit } >
                                    <input type="text" placeholder="Usuario"
                                           onChange={(e) => setName(e.target.value)}
-                                          value={name}
+                                          value={ username }
                                    />
 
-                                   <input type="email" placeholder="Email" />
+                                   <input type="email" placeholder="Email" 
+                                          onChange= { e => setEmail(e.target.value) }
+                                          value= { email }
+                                   />
                                    <input type="password" placeholder="Contraseña"
                                           onChange={(e) => setPassword(e.target.value)}
-                                          value={password}
+                                          value={ password }
                                    />
                                    <input type="password" placeholder="Repite Cotraseña"
                                           onChange={(e) => setRepetPassword(e.target.value)}
-                                          value={repetPassword}
+                                          value={ repetPassword }
                                    />
                                    <div>
                                           <input type="checkbox" required></input>
