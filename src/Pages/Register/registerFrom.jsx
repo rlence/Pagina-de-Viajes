@@ -21,13 +21,12 @@ function registerFrom() {
                      password
               }
 
-              axios.post('http://localhost:8080/users/register', body)
+              axios.post('http://localhost:8080/user/register', body)
               .then( res => {
                      console.log(res.headers)
                      alert('registro exitoso')
               })
-              .catch( console.error )
-              alert('se produjo un error front-end')
+              .catch( console.error )      
        }
 
        function comparacion() {

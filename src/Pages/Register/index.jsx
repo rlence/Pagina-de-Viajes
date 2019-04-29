@@ -1,20 +1,16 @@
 import React, {Component} from 'react';
 
-import Nav from '../Layout/nav.jsx';
-import RegisterFrom from './registerFrom.jsx';
-import Footer from '../Layout/footer.jsx';
 
+import RegisterFrom from './registerFrom.jsx';
 
 class Register extends Component {
 
        render(){
               return(
                     
-                     <RegisterFrom />
-                    
+                     <RegisterFrom />      
               )
        }
-
 }
 
 export default Register;

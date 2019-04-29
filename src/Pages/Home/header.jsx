@@ -5,7 +5,7 @@ function Header(props) {
 
        return (
 
-              <header className="cabecera">
+              <header className="cabecera"  id="cabecera" ref={ props.selector }>
                      <div className="titulos">
                             <h1>VIAJA!!</h1>
                             <h3>Descubre lugares maravillosos</h3>

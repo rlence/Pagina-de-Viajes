@@ -17,7 +17,7 @@ function LoginFrom(props) {
                      password
               }
 
-              axios.post('http://localhost:8080/users/login', body)
+              axios.post('http://localhost:8080/user/login', body)
               .then( res => {
                      console.log(res.headers)
                      localStorage.setItem('authorization', res.headers.authorization )

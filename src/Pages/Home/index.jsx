@@ -7,12 +7,29 @@ import DondeEstamos from './dondeEstamos.jsx';
 import Viajes from '../Viajes/viajes.jsx';
 
 
-class Home extends Component {
+function Home (props) {
 
-       render() {
+
+       const selectorClass = React.createRef();
+       
+       window.onscroll = function() {scroll()};
+       function scroll () {
+              
+              let altura = window.scrollY;
+               
+              console.log( document.getElementById('cabecera').clientHeight, altura )
+              
+              if(document.getElementById('cabecera').clientHeight > altura){
+                     
+                     selectorClass.current.classList.remove('scrollNav')
+              }else{
+                     selectorClass.current.classList.add('scrollNav')
+              }
+       }
+
               return (
                      <div>
-                            <Header />
+                            <Header selector= { selectorClass } />
                             <div className="zoneViajes">
                                    <div className="row1">
                                           <Viajes text="hola"
@@ -47,7 +64,6 @@ class Home extends Component {
                             <DondeEstamos />
                      </div>
               )
-       }
 };
 
 export default Home;
