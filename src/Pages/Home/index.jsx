@@ -10,26 +10,10 @@ import Viajes from '../Viajes/viajes.jsx';
 function Home (props) {
 
 
-       const selectorClass = React.createRef();
-       
-       window.onscroll = function() {scroll()};
-       function scroll () {
-              
-              let altura = window.scrollY;
-               
-              console.log( document.getElementById('cabecera').clientHeight, altura )
-              
-              if(document.getElementById('cabecera').clientHeight > altura){
-                     
-                     selectorClass.current.classList.remove('scrollNav')
-              }else{
-                     selectorClass.current.classList.add('scrollNav')
-              }
-       }
 
               return (
                      <div>
-                            <Header selector= { selectorClass } />
+                            <Header />
                             <div className="zoneViajes">
                                    <div className="row1">
                                           <Viajes text="hola"

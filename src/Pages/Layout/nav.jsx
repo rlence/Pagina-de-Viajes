@@ -6,8 +6,23 @@ import './nav.scss'
 function Nav (props){
 
 
+       const selectorClass = React.createRef();
+       
+       window.onscroll = function() {scroll()};
+       function scroll () {
+              
+              let altura = window.scrollY;
+              
+              if(selectorClass.current.clientHeight > altura){
+                     
+                     selectorClass.current.classList.remove('scrollNav')
+              }else{
+                     selectorClass.current.classList.add('scrollNav')
+              }
+       }
+
        return(
-              <nav className="navegacion">
+              <nav className="navegacion"  ref={ selectorClass } >
                      <div className="logo">
                             <img src="./imagenes/logo.png"></img>
                      </div>

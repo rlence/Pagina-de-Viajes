@@ -6,7 +6,7 @@
        box-sizing: border-box;
        position: fixed;
        top: 0%;
-       overflow-x: auto;
+       transition-duration: 1s;
 
 
        .logo{
@@ -32,7 +32,7 @@
               }
 
               a:hover{
-                     color: green;
+                     color:  rgb(199, 169, 38);
               }
        }
 
@@ -47,7 +47,8 @@
 }
 
 .scrollNav{
-       background-color: black;
+       transition-duration: 2s;
+       background-color:rgba(117, 117, 126, 0.877);
 }
 
 
