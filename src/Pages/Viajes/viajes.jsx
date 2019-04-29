@@ -16,8 +16,8 @@ function Viajes(props) {
                             <div className="texto">
                                    <p>{props.text}</p>
                             </div>
-                            <div className="precio">
-                                   <p>{props.price}</p>
+                            <div className="precio" >
+                                   <p className= "textPrecio" >{props.price}</p>
                             </div>
                      </div>
                      <div className="nombreDeViaje">

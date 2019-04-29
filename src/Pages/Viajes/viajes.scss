@@ -8,7 +8,7 @@
        margin: 0 5% 0 5%;
 
        .infomracion{
-              
+              width: 100%;
               display: flex;
               flex-direction: row;
               padding: 0 0 60% 0;
@@ -19,12 +19,16 @@
                      width: 70%;
                      background-color: black;
                      color: white;
-                     
               }
        
               .precio{
                      width: 30%;
                      background-color: yellow;
+                     
+                     p{
+                            font-style: italic;
+                            font-size: 1.2em;
+                     }
               }
        }
 
