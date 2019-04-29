@@ -25,6 +25,7 @@ function registerFrom() {
               .then( res => {
                      console.log(res.headers)
                      alert('registro exitoso')
+                     
               })
               .catch( console.error )      
        }

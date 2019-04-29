@@ -1,10 +1,18 @@
 import React from 'react';
 import './viajes.scss';
+
 function Viajes(props) {
+
+       const estilo = {
+              backgroundImage: `url('/imagenes/${props.imagesName}')`, 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize:'cover', 
+              backgroundPosition: 'center'
+       }; 
 
        return (
               <div className="viaje">
-                     <div className="infomracion">
+                     <div className="infomracion" style={ estilo } >
                             <div className="texto">
                                    <p>{props.text}</p>
                             </div>

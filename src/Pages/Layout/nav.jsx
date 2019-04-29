@@ -9,8 +9,7 @@ function Nav (props){
        const selectorClass = React.createRef();
        
        window.onscroll = function() {scroll()};
-       function scroll () {
-              
+       function scroll () {              
               let altura = window.scrollY;
               
               if(selectorClass.current.clientHeight > altura){

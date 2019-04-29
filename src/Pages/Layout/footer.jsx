@@ -1,6 +1,5 @@
 import React from 'react';
 import './footer.scss';
-import iconNav from './iconNav.jsx';
 import IconNav from './iconNav.jsx';
 
 
