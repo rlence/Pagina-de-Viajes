@@ -27,7 +27,12 @@ function registerFrom() {
                      alert('registro exitoso')
                      
               })
-              .catch( console.error )      
+              .catch( console.error )   
+              
+              setName("");
+              setEmail("");
+              setPassword("");
+              setRepetPassword("");
        }
 
        function comparacion() {

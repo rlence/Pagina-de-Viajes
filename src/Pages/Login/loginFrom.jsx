@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './loginFrom.scss';
+import { connect } from 'react-redux';
+import { userLogin } from '../../Redux/Action/user';
 
 function LoginFrom(props) {
 
@@ -19,11 +21,15 @@ function LoginFrom(props) {
 
               axios.post('http://localhost:8080/user/login', body)
               .then( res => {
-                     console.log(res.headers)
-                     localStorage.setItem('authorization', res.headers.authorization )
+                     console.log(res)
+                     //localStorage.setItem('authorization', res.headers.authorization )
+                     userLogin( res );
                      alert('haz iniciado seccion exitosamente')
               })
               .catch( console.error )
+
+              setEmail("");
+              setPassword("");
        }
 
        return (
@@ -54,5 +60,19 @@ function LoginFrom(props) {
        )
 };
 
+const mapStateToProps = ( state, propos) => {
 
-export default LoginFrom;
+       return {
+           user: state.user
+       }
+};
+
+const mapDispatchToProps = (dispatch, props) => {
+
+       return {
+     
+         userLogin: () => dispatch( userLogin( props.state.user)),
+       }
+}
+
+export default connect( mapStateToProps, mapDispatchToProps)(LoginFrom);
