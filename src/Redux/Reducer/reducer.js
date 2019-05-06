@@ -1,8 +1,10 @@
-const initialState = {}
+const initialState = {
+       user:null
+}
 
 export const actionTypes = {
 
-       ADD_USER: 'user->ADD'
+       ADD_USER: 'LOGIN'
 };
 
 export default ( state = initialState, action )=>{
@@ -11,7 +13,10 @@ export default ( state = initialState, action )=>{
 
               case actionTypes.ADD_USER:
 
-                     return [...state, action.user]
+                     return {
+                            ...state,
+                            user: action.user
+                     }
 
               default:
                      return state;

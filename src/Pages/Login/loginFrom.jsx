@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './loginFrom.scss';
 import { connect } from 'react-redux';
-import { userLogin } from '../../Redux/Action/user';
+import { userLogin } from '../../Redux/Action/actions';
 
 function LoginFrom(props) {
 
@@ -23,8 +23,12 @@ function LoginFrom(props) {
               .then( res => {
                      console.log(res)
                      //localStorage.setItem('authorization', res.headers.authorization )
-                     userLogin( res );
-                     alert('haz iniciado seccion exitosamente')
+                     const user = {
+                            ...res.data,
+                            token: res.headers.authorization
+                     }
+                     props.userLogin(user);
+                    
               })
               .catch( console.error )
 
@@ -71,7 +75,7 @@ const mapDispatchToProps = (dispatch, props) => {
 
        return {
      
-         userLogin: () => dispatch( userLogin( props.state.user)),
+         userLogin: (user) => dispatch( userLogin( user)),
        }
 }
 
